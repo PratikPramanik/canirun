@@ -1,4 +1,8 @@
 Canirun::Application.routes.draw do
+  resources :districts
+
+  resources :offices
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
