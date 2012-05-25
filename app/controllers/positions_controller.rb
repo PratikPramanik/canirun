@@ -23,19 +23,19 @@ class PositionsController < ApplicationController
 
   # GET /positions/new
   # GET /positions/new.json
-  def new
-    @position = Position.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @position }
-    end
-  end
+ # def new
+ #   @position = Position.new
+ # 
+  #  respond_to do |format|
+  #    format.html # new.html.erb
+  #    format.json { render json: @position }
+  #  end
+  #end
 
   # GET /positions/1/edit
-  def edit
-    @position = Position.find(params[:id])
-  end
+  #def edit
+  #  @position = Position.find(params[:id])
+  #end
 
   # POST /positions
   # POST /positions.json

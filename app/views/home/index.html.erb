@@ -1,8 +1,9 @@
 <h1>Hello, Rails! Can I Run is coming.</h1>
 
-<form>
-	Age: <input type="text" name="age"> <br/>
-	ZIP Code: <input type="text" name="zip">
-</form>
-
-<button>Go!</button>
+<%= form_tag("/positions", :method => "get") do %>
+  <%= label_tag(:age, "Age:") %> <br />
+  <%= text_field_tag(:age) %> <br />
+  <%= label_tag(:zip, "Zip Code:") %> <br />
+  <%= text_field_tag(:zip) %> <br />
+  <%= submit_tag("letsgo") %>
+<% end %>
